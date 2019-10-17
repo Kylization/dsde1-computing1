@@ -1,5 +1,9 @@
 import math
 
 def period(L,g):
-    T = 2*math.pi*math.sqrt(L/g)
-    return T
+    try:
+        T = 2*math.pi*math.sqrt(L/g)
+    except ZeroDivisionError:
+        raise ValueError
+    else:
+        return T    
