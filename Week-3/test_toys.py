@@ -13,7 +13,7 @@ class TestSum(unittest.TestCase):
     def test_inc(self):
         '''
         Test that it can increment an integer
-        '''
+        '''    
         result = toys.inc_return(10)
         self.assertEqual(result, 11)
 
